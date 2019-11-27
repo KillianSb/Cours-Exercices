@@ -15,6 +15,11 @@ p {
 a, a:visited {
     color: black;
     text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+a:hover, a:focus {
+	color: #AE831D;
 }
 
 /* a.menu_bas{
@@ -24,7 +29,7 @@ a, a:visited {
 } */
 
 h1 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'El Messiri', sans-serif;
     font-style: inherit;
 }
 
@@ -54,12 +59,12 @@ section.header_title {
 
 section.header_title h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding: 110px 0;
     text-transform: uppercase;
     color: black;
-    text-shadow: 3px 2px 16px darkgoldenrod;
+    text-shadow: 3px 2px 16px rgb(126, 27, 255);
 }
 
 /* MENU */
@@ -105,8 +110,10 @@ ul.niv_2 {
     /* background-color: gray; */
     background-image: url('assets/images/Back.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     padding-left: 0;
-    box-shadow: 3px 2px 16px darkgoldenrod
+    text-shadow: 3px 2px 16px darkgoldenrod;
+    box-shadow: 3px 2px 16px rgb(5, 5, 5);
 }
 
 ul.niv_2 li a, 
@@ -162,7 +169,7 @@ ul.footer_links li {
     left: 100px;
 }
 
-.mid_block article {
+.mid_block a {
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
@@ -172,43 +179,74 @@ ul.footer_links li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-color: red; */
+    display: block;
 }
 
-.mid_block article div {
+.mid_block a div {
     position: absolute;
-    bottom: 0;
+    bottom: -200px;
+    height: 250px;
     left: 0;
     background-color: darkgoldenrod;
     width: 100%;
     padding: 5px 10px;
+    transition: all 0.4s ease;
 }
 
-.mid_block article span {
+.mid_block a span {
     width: 100%;
     padding: 5px 10px;
 }
 
-.mid_block article div span {
-    display: block;
+.mid_block a:hover
+.mid_block a:focus {
+	/*color: #000;*/
 }
 
-.mid_block article div span.title {
+.mid_block a:hover div,
+.mid_block a:focus div {
+	/*padding: inherit;*/
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: auto;
+	background-color: rgba(250, 250, 250, 0.8);
+	/*color: #000;*/
+}
+
+.mid_block a:hover div span,
+.mid_block a:focus div span {
+	/*text-align: center;*/
+    /*color: #000;*/
+}
+
+.mid_block a:hover div span.title,
+.mid_block a:focus div span.title {
+    padding-top: 20px;
+}
+
+.mid_block a div span {
+    display: block;
+    transition: all 0.4s ease;
+}
+
+.mid_block a div span.title {
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.mid_block article div span.date {
+.mid_block a div span.date {
     font-size: 11px;
     font-style: italic;
-}
-
-.mid_block section p:first-child {
-    margin-top: 0;
+    padding-bottom: 5px;
 }
 
 .mid_block section {
 
+}
+
+.mid_block section p:first-child {
+    margin-top: 0;
 }
 
 /* ARTICLE */
