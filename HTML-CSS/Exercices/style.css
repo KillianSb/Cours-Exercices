@@ -2,6 +2,7 @@ body {
     color:black;
     background-color:white;
     background-image:url(assets/images/Back.jpg);
+    background-repeat: initial;
 }
 
 p {
@@ -44,7 +45,7 @@ span {
 
 section.header_title {
     height: 270px;
-    background-image: url('assets/images/arriere3.jpg');
+    background-image: url('assets/images/arriere6.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -77,6 +78,12 @@ nav a, nav a:visited {
     font-size: 22px;
 }
 
+/* A enlever si ont veut que l'image ne touche plus au menu haut */
+
+ul.niv_1 {
+    margin-bottom: 0;
+}
+
 ul.niv_1 > li {
     display: inline-block;
     position: relative;
@@ -97,6 +104,7 @@ ul.niv_2 {
     top: 100%;
     /* background-color: gray; */
     background-image: url('assets/images/Back.jpg');
+    background-repeat: no-repeat;
     padding-left: 0;
     box-shadow: 3px 2px 16px darkgoldenrod
 }
@@ -138,6 +146,35 @@ ul.footer_links {
 ul.footer_links li {
     display: inline-block;
     padding: 4px 8px;
+}
+
+/* MIDBLOCK */
+
+.mid_block {
+    padding: 40px 100px 80px 400px;
+    position: relative;
+}
+
+.mid_block aside {
+    width: 250px;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.mid_block article {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+.mid_block section {
+
+}
+
+.mid_block section p:first-child {
+    margin-top: 0;
 }
 
 /* ARTICLE */
