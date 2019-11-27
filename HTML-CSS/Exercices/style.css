@@ -1,0 +1,148 @@
+body {
+    color:black;
+    background-color:white;
+    background-image:url(assets/images/Back.jpg);
+}
+
+p {
+    color: darkgoldenrod;
+    font-style: oblique;
+    font-size: 18px;
+    text-shadow: 3px 2px 16px rgb(255, 230, 0);
+}
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/*a.menu_bas{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 17px;
+}*/
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: inherit;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.logo img {
+    margin: 0 auto;
+}
+
+span {
+    font-family: fantasy;
+} 
+
+section.header_title {
+    height: 270px;
+    background-image: url('assets/images/arriere3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.header_title h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    padding: 110px 0;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 3px 2px 16px darkgoldenrod;
+}
+
+/* MENU */
+nav {
+    box-shadow: 3px 2px 16px darkgoldenrod
+}
+nav ul {
+    list-style-type: none;
+}
+nav a, nav a:visited {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 20px 15px;
+    font-size: 22px;
+}
+
+ul.niv_1 > li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.niv_1 li a:hover, ul.niv_1 li a:focus {
+    color: darkgoldenrod
+}
+
+ul.niv_1 li:hover ul.niv_2 {
+    display: block;
+}
+
+ul.niv_2 {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    /* background-color: gray; */
+    background-image: url('assets/images/Back.jpg');
+    padding-left: 0;
+    box-shadow: 3px 2px 16px darkgoldenrod
+}
+
+ul.niv_2 li a, 
+ul.niv_2 li a:visited {
+    text-align: left;
+}
+
+ul.niv_2 li a:hover, 
+ul.niv_2 li a:focus {
+    background-color: rgb(184, 134, 11);
+    color: rgb(0, 0, 0);
+}
+
+/* FOOTER */
+footer {
+    box-shadow: 0px 1px 11px darkgoldenrod;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    padding: 20px 100px 20px 100px;
+    background-color:rgb(68, 67, 67);
+    background-image:url(assets/images/Back.jpg);
+}
+
+footer .right {
+    position: absolute;
+    top: 0;
+    right: 300px;
+}
+
+ul.footer_links {
+    list-style-type: none;
+}
+
+ul.footer_links li {
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+/* ARTICLE */
+
+div.article1 {
+    text-shadow: 3px 2px 16px darkgoldenrod;
+}
+

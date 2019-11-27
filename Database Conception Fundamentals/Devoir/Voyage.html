@@ -1,0 +1,309 @@
+<html><head>
+<title>Schema Report for database: Agence Voyage</title>
+<style>
+        td,th {
+        text-align:left;
+        vertical-align:middle;
+        }
+        table {
+        border-collapse: collapse;
+        border: 1px solid;
+        }
+        caption, th, td {
+        padding: .2em .8em;
+        border: 1px solid #000000;
+        }
+        caption {
+        background: #D3D3D3;
+        font-weight: bold;
+        font-size: 1.1em;
+        }
+        th {
+        font-weight: bold;
+        background: #000000;
+        color: white;
+        }
+        td {
+        background: #FFFFFF;
+        }
+        </style>
+      </head>
+     <body>
+<h1>Schema Report for database: Agence Voyage</h1>
+<a id="home">Table List </a><br /><ul>
+<li><a href="#Client">Client </a></li>
+<li><a href="#Fournisseur">Fournisseur </a></li>
+<li><a href="#Reservation">Reservation </a></li>
+<li><a href="#Promotion">Promotion </a></li>
+<li><a href="#Voyage">Voyage </a></li>
+<li><a href="#Paiment">Paiment </a></li>
+<li><a href="#Moyen_transport">Moyen_transport </a></li>
+<li><a href="#Facture">Facture </a></li>
+<li><a href="#Adresse">Adresse </a></li>
+<li><a href="#Moyen_transport_has_Reservation">Moyen_transport_has_Reservation </a></li>
+<li><a href="#Moyen_transport_has_Voyage">Moyen_transport_has_Voyage </a></li>
+<li><a href="#Reservation_has_Voyage">Reservation_has_Voyage </a></li>
+<li><a href="#Fournisseur_has_Voyage">Fournisseur_has_Voyage </a></li>
+</ul>
+<a id="Client"></a><table style="width:100%"><caption>Table: Client </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identifiant Client</td><td></td></tr>
+<tr><td>Nom</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Nom du client'</td><td></td></tr>
+<tr><td>Prenom</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Prenom du client'</td><td></td></tr>
+<tr><td>Sexe</td><td>ENUM('Homme, Femme')</td><td>Yes</td><td>No</td><td>No</td><td>'Sexe'</td><td></td></tr>
+<tr><td>Mail</td><td>VARCHAR(255)</td><td>No</td><td>No</td><td>No</td><td>'Adresse amil du client'</td><td></td></tr>
+<tr><td>Téléphone</td><td>VARCHAR(255)</td><td>No</td><td>No</td><td>No</td><td>'Numéro de téléphone'</td><td></td></tr>
+<tr><td>Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Adresse client</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Fournisseur"></a><table style="width:100%"><caption>Table: Fournisseur </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identifiant fournisseur</td><td></td></tr>
+<tr><td>Nom</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Nom du client'</td><td></td></tr>
+<tr><td>Prenom</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Prenom du client'</td><td></td></tr>
+<tr><td>Mail</td><td>VARCHAR(255)</td><td>No</td><td>No</td><td>No</td><td>'Adresse amil du client'</td><td></td></tr>
+<tr><td>Téléphone</td><td>VARCHAR(255)</td><td>No</td><td>No</td><td>No</td><td>'Numéro de téléphone'</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Reservation"></a><table style="width:100%"><caption>Table: Reservation </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idReservation</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identifiant Reservation</td><td></td></tr>
+<tr><td>Voyage_reserver</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Nom du voyage reserver'</td><td></td></tr>
+<tr><td>Date_reservation</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td>Date de la reservation</td><td></td></tr>
+<tr><td>Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liesn vers Client</td><td></td></tr>
+<tr><td>Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Adresse client</td><td></td></tr>
+<tr><td>Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Fournisseur</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Promotion"></a><table style="width:100%"><caption>Table: Promotion </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idPromotion</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identification Promotion</td><td></td></tr>
+<tr><td>Promotion</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>'Valeurs de la promotion'</td><td></td></tr>
+<tr><td>Ancien_prix</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>'Ancien prix'</td><td></td></tr>
+<tr><td>Date_début</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td>Date début de la promotion</td><td></td></tr>
+<tr><td>Date_fin</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td>Date fin de la promotion</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Voyage"></a><table style="width:100%"><caption>Table: Voyage </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idVoyage</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identification voyage</td><td></td></tr>
+<tr><td>Nom</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Nom du voyage'</td><td></td></tr>
+<tr><td>Destination</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Destination du voyage'</td><td></td></tr>
+<tr><td>Prix</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>'Prix du voyage'</td><td></td></tr>
+<tr><td>Nombre_de_place</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>'Nombre de place pour le voyage'</td><td></td></tr>
+<tr><td>Date_voyage</td><td>DATETIME</td><td>Yes</td><td>No</td><td>No</td><td>Date du voyage</td><td></td></tr>
+<tr><td>Promotion_idPromotion</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Promotion vers identification promotion</td><td></td></tr>
+<tr><td>Facture_idFacture</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Paiment_idPaiment</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Paiment_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Paiment_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Facture_Paiment_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Paiment"></a><table style="width:100%"><caption>Table: Paiment </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idPaiment</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identifiant paiment</td><td></td></tr>
+<tr><td>Moyen_paiment</td><td>VARCHAR(45)</td><td>Yes</td><td>No</td><td>No</td><td>'Moyen de paiment (CB,Espece,Virement..)'</td><td></td></tr>
+<tr><td>Date_paiment</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td>Date du paiment</td><td></td></tr>
+<tr><td>Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Client</td><td></td></tr>
+<tr><td>Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Adresse client</td><td></td></tr>
+<tr><td>Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Fournisseur</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Moyen_transport"></a><table style="width:100%"><caption>Table: Moyen_transport </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idMoyen_transport</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identification Transport</td><td></td></tr>
+<tr><td>Nom</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Nom du moyen de transport'</td><td></td></tr>
+<tr><td>Type</td><td>ENUM('Bateau, Train, Avion')</td><td>Yes</td><td>No</td><td>No</td><td>'Type de Transport (Aerien, Terrestre, Marritime)'</td><td></td></tr>
+<tr><td>Modèle</td><td>VARCHAR(255)</td><td>No</td><td>No</td><td>No</td><td>'Modèle du transport'</td><td></td></tr>
+<tr><td>Nombre_de_place</td><td>INT</td><td>Yes</td><td>No</td><td>No</td><td>Nombre de place</td><td></td></tr>
+<tr><td>Compagnie</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Compagnie'</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Facture"></a><table style="width:100%"><caption>Table: Facture </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idFacture</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identifiant Facture</td><td></td></tr>
+<tr><td>Date</td><td>DATE</td><td>Yes</td><td>No</td><td>No</td><td>Date de la facture</td><td></td></tr>
+<tr><td>Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Client</td><td></td></tr>
+<tr><td>Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Adresse client</td><td></td></tr>
+<tr><td>Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Fournisseur</td><td></td></tr>
+<tr><td>Paiment_idPaiment</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Paiment</td><td></td></tr>
+<tr><td>Paiment_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Paiment client</td><td></td></tr>
+<tr><td>Paiment_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Paiment client adresse</td><td></td></tr>
+<tr><td>Paiment_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers Paiment fournisseur</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Adresse"></a><table style="width:100%"><caption>Table: Adresse </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>No</td><td>Identifiant adresse</td><td></td></tr>
+<tr><td>numéro</td><td>VARCHAR(45)</td><td>No</td><td>No</td><td>No</td><td>'Numéro'</td><td></td></tr>
+<tr><td>rue</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Rue'</td><td></td></tr>
+<tr><td>code_postal</td><td>VARCHAR(50)</td><td>Yes</td><td>No</td><td>No</td><td>'Code Postal'</td><td></td></tr>
+<tr><td>ville</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Ville'</td><td></td></tr>
+<tr><td>pays</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Pays'</td><td></td></tr>
+<tr><td>complement</td><td>VARCHAR(255)</td><td>Yes</td><td>No</td><td>No</td><td>'Complement'</td><td></td></tr>
+<tr><td>Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens vers fournisseur</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Moyen_transport_has_Reservation"></a><table style="width:100%"><caption>Table: Moyen_transport_has_Reservation </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Moyen_transport_idMoyen_transport</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens  mode transport vers  identifiant transport</td><td></td></tr>
+<tr><td>Reservation_idReservation</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens reservation vers identifiant reservation</td><td></td></tr>
+<tr><td>Reservation_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation_Client_idClient</td><td></td></tr>
+<tr><td>Reservation_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation_Client_Adresse_idAdresse</td><td></td></tr>
+<tr><td>Reservation_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation_Fournisseur_idFournisseur</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Moyen_transport_has_Voyage"></a><table style="width:100%"><caption>Table: Moyen_transport_has_Voyage </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Moyen_transport_idMoyen_transport</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td> Liens Moyen_transport_idMoyen_transport</td><td></td></tr>
+<tr><td>Voyage_idVoyage</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Voyage vers identification voyage</td><td></td></tr>
+<tr><td>Voyage_Promotion_idPromotion</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Voyage_Promotion_idPromotion</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Reservation_has_Voyage"></a><table style="width:100%"><caption>Table: Reservation_has_Voyage </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Reservation_idReservation</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation vers identification reservation</td><td></td></tr>
+<tr><td>Reservation_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation_Client_idClient</td><td></td></tr>
+<tr><td>Reservation_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation_Client_Adresse_idAdresse</td><td></td></tr>
+<tr><td>Reservation_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Reservation_Fournisseur_idFournisseur</td><td></td></tr>
+<tr><td>Voyage_idVoyage</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Voyage vers identification voyage</td><td></td></tr>
+<tr><td>Voyage_Promotion_idPromotion</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Liens Voyage_Promotion_idPromotion</td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+<a id="Fournisseur_has_Voyage"></a><table style="width:100%"><caption>Table: Fournisseur_has_Voyage </caption>
+<tr><td>Table Comments</td><td colspan="6"></td></tr>
+<tr><td colspan="7">Columns</td></tr>
+        <tr>
+        <th>Name</th>
+        <th>Data Type</th>
+        <th>Nullable</th>
+        <th>PK</th>
+        <th>FK</th>
+        <th>Default</th>
+        <th>Comment</th>
+        </tr>
+<tr><td>Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_idVoyage</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Promotion_idPromotion</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_idFacture</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Paiment_idPaiment</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Paiment_Client_idClient</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Paiment_Client_Adresse_idAdresse</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+<tr><td>Voyage_Facture_Paiment_Fournisseur_idFournisseur</td><td>INT</td><td>Yes</td><td>Yes</td><td>Yes</td><td></td><td></td></tr>
+</table><a href="#home">Table List </a></br>
+</body></html>
