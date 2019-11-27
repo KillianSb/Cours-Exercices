@@ -179,16 +179,12 @@ ul.footer_links li {
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #FFF;
+    background-color: darkgoldenrod;
     width: 100%;
     padding: 5px 10px;
 }
 
 .mid_block article span {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: darkgoldenrod;
     width: 100%;
     padding: 5px 10px;
 }
@@ -202,12 +198,17 @@ ul.footer_links li {
     font-weight: 700;
 }
 
-.mid_block section {
-
+.mid_block article div span.date {
+    font-size: 11px;
+    font-style: italic;
 }
 
 .mid_block section p:first-child {
     margin-top: 0;
+}
+
+.mid_block section {
+
 }
 
 /* ARTICLE */
