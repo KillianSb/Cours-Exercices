@@ -78,7 +78,7 @@ nav a, nav a:visited {
     font-size: 22px;
 }
 
-/* A enlever si ont veut que l'image ne touche plus au menu haut */
+/* A enlever ligne ci-desous si ont veut que l'image ne touche plus au menu haut */
 
 ul.niv_1 {
     margin-bottom: 0;
@@ -166,7 +166,40 @@ ul.footer_links li {
     width: 250px;
     height: 250px;
     margin-bottom: 20px;
-    background-color: red;
+    position: relative;
+    box-shadow: 0px 1px 11px darkgoldenrod;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+.mid_block article div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.mid_block article span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: darkgoldenrod;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.mid_block article div span {
+    display: block;
+}
+
+.mid_block article div span.title {
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .mid_block section {
