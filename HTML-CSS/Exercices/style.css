@@ -67,6 +67,30 @@ section.header_title h1 {
     text-shadow: 3px 2px 16px rgb(126, 27, 255);
 }
 
+ul.rs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	top: 80px;
+	right: 100px;
+}
+
+ul.rs li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+ul.rs li a,
+ul.rs li a:visited {
+	font-size: 50px;
+}
+
+ul.rs li a:hover,
+ul.rs li a:focus {
+	color: #AE831D;
+}
+
 /* MENU */
 nav {
     box-shadow: 3px 2px 16px darkgoldenrod
@@ -138,6 +162,7 @@ footer {
     padding: 20px 100px 20px 100px;
     background-color:rgb(68, 67, 67);
     background-image:url(assets/images/Back.jpg);
+    z-index: 100000000;
 }
 
 footer .right {
@@ -160,6 +185,7 @@ ul.footer_links li {
 .mid_block {
     padding: 40px 100px 80px 400px;
     position: relative;
+    margin-bottom: 80px;
 }
 
 .mid_block aside {
@@ -167,6 +193,7 @@ ul.footer_links li {
     position: absolute;
     top: 40px;
     left: 100px;
+    padding-bottom: 80px;
 }
 
 .mid_block a {
@@ -242,11 +269,49 @@ ul.footer_links li {
 }
 
 .mid_block section {
+    padding: 10px 20px;
+}
 
+.mid_block section p {
+	font-size: 18px;
+	text-align: justify;
 }
 
 .mid_block section p:first-child {
     margin-top: 0;
+}
+
+.citation {
+    margin: 120px 0;
+    font-size: 48px;
+    padding: 20px 40px 20px 70px;
+    text-align: center;
+}
+
+.citation blockquote {
+    font-family: 'Dancing Script', cursive;
+    position: relative;
+}
+
+.citation blockquote:before {
+	position: absolute;
+	top: -340px;
+	left: -90px;
+	content: "«";
+	font-size: 450px;
+	transform: rotate(30deg);
+	color: #AE831D;
+}
+
+.citation span {
+	display: block;
+	text-align: right;
+	font-size: 16px;
+	color: #AE831D;
+	padding-top: 30px;
+    font-family: 'Great Vibes', cursive;
+    font-style: inherit;
+    text-shadow: 3px 2px 16px rgb(240, 219, 28);
 }
 
 /* ARTICLE */
@@ -255,3 +320,69 @@ div.article1 {
     text-shadow: 3px 2px 16px darkgoldenrod;
 }
 
+.slider .swiper-slide .image {
+	width: auto;
+	height: 250px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.slider .swiper-slide .image span {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	text-align: center;
+	color: #FFF;
+}
+
+.slider .swiper-slide .image span:hover,
+.slider .swiper-slide .image span:focus {
+    color: #AE831D;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #AE831D;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #FFF;
+}
+
+div.titre {
+    text-align: center;
+    text-shadow: 3px 2px 16px darkgoldenrod;
+    famille de polices: 'Lobster Two', cursive;
+    font-style: inherit;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.titre::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    background-color: darkgoldenrod;
+    width: 75px;
+    height: 2px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: #AE831D;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+	color: #FFF;
+}
