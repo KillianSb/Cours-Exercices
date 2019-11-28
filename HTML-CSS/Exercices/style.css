@@ -380,10 +380,10 @@ div.titre {
 
 .swiper-button-prev,
 .swiper-button-next {
-	color: #AE831D;
+    color: rgb(0, 0, 0);
 }
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-	color: #FFF;
+	color: darkgoldenrod;
 }
