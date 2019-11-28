@@ -300,7 +300,8 @@ ul.footer_links li {
 	content: "«";
 	font-size: 450px;
 	transform: rotate(30deg);
-	color: #AE831D;
+    color: #AE831D;
+    text-shadow: 3px 2px 16px black;
 }
 
 .citation span {
