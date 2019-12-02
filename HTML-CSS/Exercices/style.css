@@ -387,3 +387,60 @@ div.titre {
 .swiper-button-next:hover {
 	color: darkgoldenrod;
 }
+
+@media only screen and (max-width: 892px) {
+	ul.rs {
+		right: 50px;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	section.header_title h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+	ul.rs {
+		position: inherit;
+		top: inherit;
+		right: inherit;
+	}
+}
+
+@media only screen and (max-width: 786px) {
+	section.header_title h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	ul.rs {
+		right: 50px;
+	}
+}
+
+@media only screen and (max-width: 616px) {
+	section.header_title h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 564px) {
+	ul.niv_1 a {
+        font-size: 20px;
+        width: auto;
+        position: relative;
+        margin-right: 10px;
+	}
+}
+
+@media only screen and (max-width: 556px) {
+	ul.niv_2 {
+        border-radius: 10px;
+        z-index: 100000000;
+	}
+}
