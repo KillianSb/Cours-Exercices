@@ -1,0 +1,171 @@
+
+fonction LEN = Longueur
+Len("Bonjour, ca va ?") vaut 16
+Len("") vaut 0
+
+FONCTION MILD = middle = milieu
+Mild("Zorro ic back",4,7) vaut "ro is b"
+Mild("Zorro ic back",12,1) aut "c"
+
+Fonction Left soit gauche
+left("et pourtant...",8) vaut "Et pourt"
+right("et pourtant...",4) vaut "t..."
+
+Fonction Trouve
+trouve("un pur bonheur","pur") vaut 4
+trouve("un pur bonheur","techno") vaut 0
+
+Nombres : 
+fonction ent = entier
+A <- Ent(3.228) A vaut 3
+
+fonction mod = modulo
+A <- Mod(10,3) A vaut 1 car 10 = 3X3 +1
+B <- Mod(12,2) B vaut 0 car 12 = 6X2 donc pas de reste.
+C <- Mod(44,8) C vaut 4 car 44 = 5*8+4
+
+Si X % 2 == 0 "si le modulo de x/2 est egal a zéro"
+Ecrire "pair"
+
+
+Fonction Aléatoire
+Toto <- Aléa()0 =< Toto < 1
+
+
+
+Exercice 9.1
+
+Variables A, B, C en Numérique  
+Variable D en Caractère
+A ← Sin(B)
+A ← Sin(A + B * C)
+B ← Sin(A) – Sin(D)
+C ← Sin(A / B)
+C ← Cos(Sin(A)
+
+
+Exercice 9.2
+
+debut
+variable txt Carac
+ecrire "donne moi un mot"
+lire txt
+a <- len txt
+ecrire "vous avez tapez", a, "caracteres"
+
+
+
+Exercice 9.3
+
+debut
+variable txt caract
+variable i, c numerique
+ecrire "donnez moi un texte"
+lire txt
+pour i <-0 a len (txt -1)
+    si txt(i)==" "
+        c = c+1
+    fin de si
+i suivant
+
+
+
+Exercice 9.4
+
+Début
+variable txt caract
+variable i, c, d numerique
+ecrire "donnez moi un texte"
+lire txt
+pour i <-0 a len(txt)
+    si i="a" ou i="e" ou i="o" ou i="u" ou i="y" alors
+        c = c+1
+    findesi
+i suivant
+ecrire "le texte comporte" c  "voyelles"
+
+
+Début
+variable txt caract
+variable c, d numerique
+ecrire "donnez moi un texte"
+lire txt
+de c <-1 a len(txt)
+    d= d+ trouve ((midle"txt",c,1),"a","e","i","o","u","y")
+c suivant
+ecrire "nombres de voyelles =" et d
+
+
+
+Exercice 9.5
+
+debut
+variable txt, texa caract
+variable choix, c numerique
+ecrire "donnez moi une phrase"
+lire txt
+len texa = len tex -1
+"a quel rang se trouve le caractere a supprimer ?"
+lire choix
+de c <-1 a len texa
+    si choix =! c alors
+        midle texa (c,1)<- midle txt (c,1)
+    findesi
+c suivant
+ecrire "texa"
+fin
+
+
+exercice 9.6
+
+
+debut
+variable txt, texa caract
+variable a,c numerique
+ecrire "donnez moi une phrase"
+lire txt
+pour c <-1 a len(txt)
+    si midle tex (c,1) != 26 alors
+        midle texa (c,1) <- middle tex(c,1)+1
+    sinon midle texa (c,1) = 1
+    findesi
+c suivant
+fin
+
+
+
+Exercice 9.7
+
+Début
+variable txt caract
+variable a,c,i numerique
+ecrire "donnez moi une phrase"
+lire txt
+ecrire "donnez moi un facteur code"
+lire c
+pour 1 <- A to len(text)
+    if midle text(A,1) + C > 26 alors
+        midle txt(A,1) = (midle txt (A,1) +C) - 26
+    sinon midle text(A,1) = midle text (A,1) +C
+    fin de si
+A suivant
+fin
+
+
+si mon nombre + le facteur code est plus grand que 26, j'incremente
+la difference a la place de mon nombre.
+exemple : 
+facteur code = 12 = c
+chiffre = 18
+18 + 12 = 30
+(18+12) -26 = 4
+si chiffre + c > 26 alors
+    chiffre = (chiffre + c) - 26
+sinon chiffre = chiffre +c
+findesi
+
+
+
+Exercice 9.8
+
+debut

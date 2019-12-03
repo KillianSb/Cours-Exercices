@@ -1,0 +1,16 @@
+commandes git :
+
+ls : liste tous les dossiers
+cd "lettre majuscule du dossier cible + tabulation".
+sinon lettre majuscule du dossier cible et tous les dossiers avec cette lettre sont listés.
+: Changer de dossiers
+
+clear : nettoie l'ecran
+
+cd .. pour revenir en arriere
+
+cat permet de lire un fichier txt
+
+-al permet d'afficher les dossiers et fichiers cachés
+commande "." git add.
+ajoute tous les fichiers qui ont ete modifiés

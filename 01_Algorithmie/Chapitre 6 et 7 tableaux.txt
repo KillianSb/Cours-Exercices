@@ -1,0 +1,264 @@
+DEBUT
+tableau Note(11) Numéroque
+Variables Moy, Som, i Numérique
+Pour i <- 0 a 10
+    Ecrire " entrez la note" n, i
+    LIRE Note(i)
+i suivant
+
+
+som <- 0
+Pour i <- 0 à 10
+    Som <- Som + note(i)
+i suivant
+Moy <- Som /12
+FIN
+
+
+
+Exercice 6.1
+
+DEBUT
+tableau mesure(6) Numérique
+variable nul Numérique
+pour nul <- 0 a 6
+    mesure,nul <-0
+nul suivant
+FIN
+
+
+
+Exercice 6.2
+
+DEBUT
+tableau voyelle(6) caractere
+voyelle(0) <- A
+voyelle(1) <- E
+voyelle(2) <- I
+voyelle(3) <- O
+voyelle(4) <- U
+voyelle(5) <- Y
+FIN
+
+
+
+Exercice 6.3
+
+DEBUT
+tableau note(9) Numérique
+variable i Numérique
+pour i <- 0 a 8
+    ecrire "entrez la note"
+    lire note,(i)
+i suivant
+FIN
+
+
+
+Exercice 6.4
+
+Tableau​ Nb(5) ​en​ ​Entier  creation d'un tableau a 5 valeurs numérique entiere.
+Variable​ i ​en​ ​Entier     creation d'une valeur i en valeur numerique entiere
+Début                    début de l'instruction
+Pour​ i ← 0 à 4           boucle d'instruction pour une valeur de i comprise entre zer0 et 5
+Nb(i) ← i * i            i est mis au carré dans la valeur correspondante a la racine.
+i ​suivant                i retour d'instruction de la boucle
+Pour​ i ← 0 à 4           boucle d'instruction pour une valeur de i comprise entre zéro et 5
+​Ecrire​ Nb(i)             ecriture de la memoire correspondante a la valeur de i
+i ​suivant                i retour d'instruction de la boucle
+Fin                      fin du programme
+
+
+0,1,4,9,16
+
+
+simplification :
+
+Tableau​ Nb(5) ​en​ ​Entier  creation d'un tableau a 5 valeurs numérique entiere.
+Variable​ i ​en​ ​Entier     creation d'une valeur i en valeur numerique entiere
+Début                    début de l'instruction
+Pour​ i ← 0 à 4           boucle d'instruction pour une valeur de i comprise entre zer0 et 5
+Nb(i) ← i * i            i est mis au carré dans la valeur correspondante a la racine.
+​Ecrire​ Nb(i)             ecriture de la memoire correspondante a la valeur de i
+i ​suivant                i retour d'instruction de la boucle
+Fin                      fin du programme
+
+
+
+
+Exercice 6.5
+
+
+Tableau​ N(6) ​en​ ​Entier
+Variables​ i, k ​en​ ​Entier
+Début
+N(0) ← 1
+Pour​ k ← 1 à 6
+    N(k) ← N(k-1) + 2
+k ​Suivant
+Pour​ i ← 0 à 6
+    ​Ecrire​ N(i)
+i ​suivant
+Fin
+
+1,3,5,7,11,13
+
+simplfication :
+
+Tableau​ N(6) ​en​ ​Entier
+Variables​ i, k ​en​ ​Entier
+Début
+N(0) ← 1
+Pour​ k ← 1 à 6
+    N(k) ← N(k-1) + 2
+    Ecrire​ N(k)
+k ​Suivant
+​Fin
+
+
+
+Exercice 6.6
+
+Tableau​ Suite(7) ​en Entier
+Variable​ i ​en Entier
+Début
+Suite(0) ← 1
+Suite(1) ← 1
+Pour​ i ← 2 à 7
+Suite(i) ← Suite(i-1) + Suite(i-2)
+i ​suivant
+Pour​ i ← 0 à 7
+Ecrire​ Suite(i)
+i ​suivant
+Fin
+
+l'algorithme fait : ecrit : 1,1,2,3,5,8,13
+
+
+Exercice 6.7
+
+DEBUT
+tableau note(9) Numérique
+variable i,som Numérique
+som <- 0
+pour i <- 0 a 8
+    ecrire "entrez la note"
+    lire note,(i)
+    som <- note(i) + som
+    ecrire "moyenne actuelle"
+    ecrire som / i+1
+i suivant
+FIN
+
+
+
+Exercice 6.8
+
+DEBUT
+variable qte, positif, negatif numérique
+positif <- 0
+negatif <- 0
+ecrire "quantitée de valeurs souhaitées"
+lire qte
+tableau valeur(qte-1) numérique
+pour i 0 to (qte-1)
+    lire valeur(i)
+        si valeur (qte) >= 0 Alors
+            positif <- positif + 1
+        sinon negatif <- negatif + 1
+i suivant
+ecrire "il y a" positif "valeur positive" et "il y a" negatif "valeurs negative"
+FIN
+
+
+
+Exercice 6.9
+
+DEBUT
+Variables​ i, som, x ​en​ ​Entier
+Début
+ecrire "taille du tableau"
+lire X
+tableau N(X) numérique
+i = som = 0
+Pour​ i to X
+    ecrire "entrez le nombre"
+    lire N,(X)
+    som <- N(X) + som
+i suivant
+ecrire "la somme total est de :" et som
+FIN
+
+
+
+Exercice 6.10
+
+DEBUT
+tableau t1b(7), t2b(7), t3(7) entier.
+variable i numerique
+0 <- i 
+pour i to 7
+    t3b(i) <- t1b(i) + t2b(i)
+i suivant
+FIN
+
+
+
+Exercice 6.11
+
+DEBUT
+tableau t1b (3), t2b (1)
+variable i,a, produit entier
+i = a= produit = 0
+pour a to 1
+pour i to 3
+prodruit = produit + t2b (a) x t1b (i)
+i suivant
+a suivant
+Ecrire prodruit
+fin
+
+
+Exercice 6.12
+
+DEBUT
+variable qte, i numérique
+ecrire "quantitée de valeurs souhaitées"
+lire qte
+tableau valeur(qte-1) entier
+pour i to (qte-1)
+    lire valeur(i)
+i suivant
+i= 0
+ecrire "nouveau tableau"
+pour i to qte-1
+valeur(i) = valeur (i)+1
+ecrire valeur (i)
+FIN
+
+
+
+Exercice 6.13
+
+DEBUT
+variable qte, i, compteur, max numérique
+ecrire "quantitée de valeurs souhaitées"
+lire qte
+i = max = 0
+tableau valeur(qte-1) entier
+pour i to (qte-1)
+    lire valeur(i)
+    si valeur(i) > max Alors
+        max <- valeur(i)
+        compteur <- i
+    findesi
+i suivant
+ecrire "la plus grande valeur est" et max
+ecrire "elle a ete saisie en position " et compteur
+FIN
+
+
+
+Exercice 6.14
+
+

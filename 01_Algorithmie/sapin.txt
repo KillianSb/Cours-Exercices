@@ -1,0 +1,31 @@
+sapin
+
+
+
+variables tri,a,b,Y,X,marqrang, rangée, col en numerique
+1 <- Y
+0 <- marqrang
+ecrire "combien de triangles voulez vous ?"
+lire tri
+rangée <- 3*tri+5
+col <- 2*(3*tri)
+variable tab sap(rangée, col)
+pour x <- 0 a tri
+    pour a<- 1+marqrang A 3
+        pour b <- 1 A Y+X
+            "*" <- tab sap(a,b+col/2)
+        b suivant
+        y = y+1
+    a suivant
+    marqrang= marqrang +3
+tri suivant
+pour a <- 0 A col/2
+    pour b <- 0 a rangée
+        tab sap(b, 20-a) <- tab sap(b,a)
+    b suivant
+a suivant
+pour a <- (col/2)-1 a (col/2)+1
+    pour b <- 3*tri a 3*tri+5
+        ecrire "*" <- tab sap(b,a)
+    b suivant
+a suivant

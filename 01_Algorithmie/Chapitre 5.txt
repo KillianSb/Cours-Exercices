@@ -1,0 +1,149 @@
+exemple de boucle en logique :
+
+Boucle TANT QUE
+
+debut
+Variable A numerique
+A <- 10
+TANT QUE A < 100
+    Lire A
+    Si A < 100 alors
+        Ecrire "reesayez"
+    Fin de Si
+Fin Tant QUE
+FIN
+
+
+Boucle de x a x+n
+
+debut
+Variable A numérique
+Pour A <- 1 a 10
+Ecrire a
+a Suivant
+FIN
+
+
+Exercice 5.1
+
+debut
+variable a numérique
+Ecrire "nb"
+Lire A
+TANT QUE 1 >= a > 3
+    Ecrire "ressayer !"
+    lire A
+FIN TANT QUE
+
+
+Exercice 5.2
+
+debut
+variable a numérique
+Ecrire "nb"
+Lire A
+TANT QUE 10 > A > 20
+    SI A > 20 alors
+        Ecrire "plus petit"
+    SINON A < 10 alors
+        Ecrire "plus grand"
+    FIN DE SI
+    lire A
+FIN TANT QUE
+
+
+
+Exercice 5.3
+
+début
+variable nb, ref numérique
+ecrire "choisi un nombre"
+lire nb
+ref <-0
+pour ref+1 a ref+10
+ecrire nb
+nb = nb + 1
+suivant
+fin
+
+
+
+Exercice 5.4
+
+DEBUT
+variable nb, ref numerique
+ecrire "choisi un nombre"
+lire nb
+ref <- nb
+TANT QUE nb =< ref+10
+Lire nb
+nb = nb + 1
+FINTANTQUE
+FIN
+
+
+
+
+Exercice 5.5
+
+DEBUT
+Variable nb, table numerique
+Ecrire "choisi un nombre de départ"
+lire nb
+table <- 1
+TANT QUE table =<10
+Ecrire nb x table
+table = table + 1
+FINTANTQUE
+FIN
+
+
+
+debut
+pour nb <- 1 a 10
+ecrire table "x" nb "=" nb x table
+
+
+
+
+
+
+
+Exercice 5.6
+
+DEBUT
+Variable nb, compteur, result numérique
+Ecrire "choisi un nombre"
+lire nb
+compteur <- 1
+Pour compteur a nb
+ecrire compteur
+result <- compteur + result
+compteur = compteur +1
+suivant
+Ecrire "résultat" et result
+fin
+
+
+
+
+EXERCICE 5.7
+
+DEBUT
+Variable nb, facteur, result numérique
+Ecrire "choisi un nombre"
+lire nb
+facteur <- 1
+result <- 1
+Pour facteur a nb
+result = facteur X result
+ecrire result
+facteur = facteur +1
+suivant
+fin
+
+
+
+
+
+

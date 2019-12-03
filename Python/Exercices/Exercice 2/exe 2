@@ -1,0 +1,13 @@
+## Exercice 2
+
+Compter le nombre de ligne de n fichiers
+
+Info:
+* Lire un fichier open(<nom_du_fichier>)
+* Librairie STD, argparse
+
+Exemple:
+> python line_numb.py fich1.txt fich2.txt
+fich1.txt: 40
+fich2.txt: 60
+total: 100

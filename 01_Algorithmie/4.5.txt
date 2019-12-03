@@ -1,0 +1,12 @@
+debut
+variable genre caractere
+variable age numerique
+ecrire "quel est votre age"
+lire age
+ecrire "quel genre"
+lire genre
+	si (age > 20 et genre = "homme") ou (age =< 18 et age > 36 et genre = "femme") alors 
+		ecrire "vous etes imposable"
+	sinon ecrire "vous n'etes pas imposable
+fin de si
+fin

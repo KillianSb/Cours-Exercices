@@ -1,0 +1,25 @@
+debut
+variable tarif caractere
+variable age, acci, ancien, permis numerique.
+	si age < 25 et permis =< 2 et acci = 0 alors 
+		tarif = "rouge"
+	sinon si ((age < 25 et permis > 2) ou (age > 25 et permis < 2 )) et acci = 0 Alors
+		tarif = "orange"
+	sinon si ((age < 25 et permis > 2) ou (age > 25 et permis < 2 )) et acci = 1 Alors
+		tarif = "rouge"
+	sinon si age > 25 et permis > 2 et acci = 0 Alors
+		tarif = "vert"
+	sinon si age > 25 et permis > 2 et acci = 1 Alors
+		tarif = "orange"
+	sinon si age > 25 et permis > 2 et acci = 2 Alors
+		tarif = "rouge"
+	sinon ecrire "refusé" et tarif = "nul"
+	fin de si
+	si ancien > 5 et tarif = rouge alors
+		tarif = "orange"
+	sinon si ancien > 5 et tarif = orange alors
+		tarif = "vert"
+	sinon ancien > 5 et tarif =vert alors
+		tarif = "bleu"
+	fin de si
+fin

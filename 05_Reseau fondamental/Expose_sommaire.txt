@@ -1,0 +1,93 @@
+
+ 1 - Historique modele OSI :
+
+
+Pourquoi OSI :
+Aux origines des réseaux chaque constructeur avait un système propre (on parle de système propriétaire). 
+Ainsi de nombreux réseaux incompatibles coexistaient.
+C'est la raison pour laquelle l'établissement d'une norme a été nécessaire.
+
+
+OSI : Open Systems Interconnection  ou Interconnexion de systemes ouvert.
+Le systeme OSI est une segmentation standardisée du processus de communication entre 2 entitées.
+On parle de segmentation en blocs.
+Ces couches regroupent des services qui ont des tachent précise.
+L'avantage du modèle OSI est que chaque couche communique avec la couche du dessus et du dessous en meme temps (systeme de couches adjacentes).
+Fonctionnement : la couche du dessous pourvois a la couche encours des services et la couche encours pourvois en service la couche du dessus.
+Soit : couche N-1 -> N -> N+1
+
+
+2 - Modèle OSI :
+
+Fonctionnement :
+
+La couche applicative :
+
+C'est la couche interface utilisateur, elle va donner acces à des services via une interface, tels que le transfert de fichiers, la rédaction de mails, l'établissement d'une session à distance.
+Plusieurs protocoles peuvent assurés ces services : FTP (pour le transfert de fichiers), Telnet (établissement de sessions a distance) et SMTP ou POP (envois de mails).
+
+
+
+La couche présentation :
+
+La couche présentation s'occupe de tout l'apsect visuel de l'information , ce qui comprend : la sémantique, la syntaxe mais aussi le chiffrement/déchiffrement.
+Exemple : le codage d'un fichier codé en ASCII (American Standard Code for Information Interchange) en EBCDIC (Extended Binary Coded Decimal Interchange Code)
+
+
+
+La couche session :
+
+C'ets la couche qui va permettre l'établissement d'une session entre les applications qui doivent communiquer.
+La gestion d'une session et la reconnexion s'effectueront dans cette couche.
+Apres une deconnexion, la reconnexion s'effectuera dans cette même couche.
+
+
+La couche transport :
+
+Contrairement à ce que son nom peut laisser penser, cette couche ne se charge pas tout à fait elle-même du transport de l'information. Cependant elle y contribue, vu que les 4 dernières couches travaillent ensemble pour réaliser le transport de données. En elle-même, la couche transport ne se charge en fait que de préparer l'envoie de données en les divisant en plusieurs segments et en les réunissant dans la couche de transport de l'hôte récepteur. Cette couche permet aussi de décider de la meilleur façon d'envoyer l'information en fonction des contraintes de communication, selon s'il on veut s'assurer d'une transmission réussie ou pas et selon le port que l'on veut utiliser. Cette même couche modifie également l'en-tête des données en y ajoutant notamment les numéros de ports de la source et de la destination.
+
+
+La couche réseau :
+
+La couche résau s'occupe du relais des informations du point A au point B. Pour ce faire, elle modifie encore en fois l'en-tête en y ajoutant l'adresse IP source et l'adresse IP du destinataire. C'est aussi dans cette couche que le mode de transport est choisi entre connecté ou non-connecté.
+
+
+La couche liaison : 
+
+La couche de liaison établie une liaison "physique" entre les deux hôtes, là où la couche résau n'effectue qu'une liaison logique. Ainsi elle transforme la couche physique en une liaison, tout en corrigeant les potentielles erreurs de cette couche physique. De plus elle fragmente les données en plusieurs trames, envoyées une par une dans un réseau local, et gèr l'aquittement de ces termes.
+
+
+La couche physique :
+
+La couche pysique reçoit les trames précédemment envoyées par la couche liaison. Une fois récéptionnées, ces trames sont converties en une succession de bits qui sont ensuite mis sur le média pour l'envoie. La couche physique s'occupe donc de la transmission des signaux électriques ou optiques entre les hôtes. Elle comprend des services tels que la détetion de collision, le multiplexing, la modulation, le circuit switching ... etc.
+
+
+
+
+Phrase mémotechnique :
+
+A Peine Serré, Tu Rends Le Portefeuille
+
+A – Application P – Présentation S – Session T – Transport R – Réseau L – Liaison P – Physique
+
+
+
+
+Résumé en tableau :
+
+7	Application	Point de contact avec les services réseaux.
+
+6	Présentation	Elle s’occupe de tout aspect lié à la présentation des données : format, chiffrement, encodage, etc.
+
+5	Session	Responsable de l’initialisation de la session, de sa gestion et de sa fermeture.
+
+4	Transport	Choix du protocole de transmission et préparation de l’envoi des données. Elle spécifie le numéro de port utilisé par l’application émettrice ainsi que le numéro de port de l’application réceptrice. Elle fragmente les données en plusieurs séquences (ou segments).
+
+3	Réseau	Connexion logique entre les hôtes. Elle traite de tout ce qui concerne l’identification et le routage dans le réseau.
+
+2	Liaison de données	Établissement d’une liaison physique entre les hôtes. Fragmente les données en plusieurs trames.
+
+1	Physique	Conversion des trames en bits et transmission physique des données sur le média.
+
+
+

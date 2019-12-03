@@ -1,0 +1,14 @@
+debut
+variable c1, c2, c3, c4, pige numérique
+ecrire "saisissez les scores du candidat 1"
+lire c1, c2, c3, c4
+pige = c1+c2+c3+c4
+	si c1 > pige/2 alors
+		ecrire "vous etes elu"
+	sinon si c1 >= 0.125*pige et c1 =< pige/2 et c1 > c2 et c1 > c3 et c1 > c4 alors
+		ecrire "yo deuxieme tour mec et ca sent bon !!"
+	sinon si c1 >= 0.125*pige et c1 =< pige/2 et (c1 =< c2 ou c1 =< c3 ou c1 =< c4) 
+		ecrire "deuxieme tour et vous n'etiez pas en tete"
+	sinon ecrire "looser"
+	fin de si
+fin

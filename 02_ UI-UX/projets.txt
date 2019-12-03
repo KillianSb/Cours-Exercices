@@ -1,0 +1,79 @@
+1 er planche : 
+ecran de login. 
+
+login ou adresse mail 
+puis mdp
+puis bouton pour se connecté avec facebook directement.
+en petite ligne lien vers identifiants perdu.
+bouton nouvel utilisateur.
+photo : suggestion personnelle : dernier avatar connecté.
+
+
+
+
+2 eme planche :
+Creation de profil
+Simple
+demande :
+
+adresse mail.
+un pseudo et un mdp
+confirmer mdp
+ et age.
+ bouton creer me compte renvois ensuite vers la page de login
+ 
+
+ 
+3 eme
+page simple :
+demande adresse mail.
+mot de asse de recup
+nouveau mdp
+confirmé nouveau mpd
+
+
+
+
+4 eme planche
+
+au mileu en haut une barre de recherche
+menu a gauche : logo qui represente bouton retour
+en dessous nouvelles videos, puis nouvelles tendances, les plus vues, les mieux notés.
+a droite la photo d'avatar deroulante sur la carte et les options de profil accessible
+ via un engrenage.
+ 
+ 
+ 
+En cliquant sur un bouton en bas à gauche d'un encadré cela ouvre une fenetre
+avec le synopsis et les infos.
+
+En bas de page : un espace, vos amis regarde.
+
+
+
+
+5 eme planche :
+
+le lecteur : plugin vlc.
+et toujour le menu fixe sur le coté.
+un systeme de notation.
+un espace commentaires.
+un menu deroulant vient se mettre devant la vidéo pour entrer une note, et des commentaires.
+
+
+
+
+6 eme planche :
+
+la page de categories :
+multiples categories peuvent etre cochées pour tomber sur une recherche affinée.
+
+
+
+
+7 eme planche :
+options :
+infos personelles
+preference : preference de l'interface.
+limitation d'age.
+reseaux de comptes.

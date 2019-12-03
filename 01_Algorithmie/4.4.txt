@@ -1,0 +1,12 @@
+debut
+variable photo, total numerique
+ecrire "combien de photos voulez vous"
+lire photo
+si photo >= 30 Alors
+	total = 0.10*10 + 0.09*20 + (photos-30) x 0.08
+sinon si photo > 10 et photo =< 30 Alors
+	total = 0.10*10 + (photos-10) x 0.09
+sinon total = 0.10 x photo
+fin de si
+ecrire "soit un total de" et total
+fin

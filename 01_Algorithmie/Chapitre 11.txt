@@ -1,0 +1,109 @@
+Exercice 11.1
+
+debut
+fonction somme (a,b,c,d,e) numerique
+    som <- a+b+c+d+e
+renvoyer som
+fnfonction
+fin
+
+
+
+Exercice 11.2
+
+debut
+fonction somvoy (txt carac, a num, c num)
+    pour 1<-a to len(txt)
+        if txt(a)= a or txt(a)=e or txt(a)=i or txt(a)=o or txt(a)=u or txt(a)=y alors
+            c= c+1
+        ifend
+    a suivant
+renvoyer c
+fnfonction
+
+
+
+Exercice 11.3
+
+debut
+fonction somvoy (txt carac, a num, c num)
+    pour 1<-a to len(txt)
+        if midtxt(a,1)= a or midtxt(a,1)=e or midtxt(a,1)=i or midtxt(a,1)=o or midtxt(a,1)=u or midtxt(a,1)=y alors
+            c= c+1
+        IfEnd
+    a suivant
+renvoyer c
+fnfonction
+
+
+
+Exercice 11.4
+
+debut
+fonction purge (txt carc,texa carac, choix caract, c num)
+    "" <- texa
+    pour c <- 1 a len txt
+        if midl(txt,c) =! choix alors
+            texa <- texa + midl(txt,1)
+        ifend
+    c suivant
+renvoyer texa
+fnfonction
+
+
+
+Exercice 11.5
+
+Fonction PurgeMultiple(txt en Carac, choix en Carac, 
+texa en carac, i, c, d, z numérique)
+Début
+texa ← ''
+pour d <- 1 a Len(txt)
+    Pour i ← 1 à Len(choix)
+        c <- mid(choix,i,1)
+        if c = mid(txt,d,1) alors
+            texa <- texa +""
+        sinon z <- 1
+        IfEnd
+    i suivant
+d suivant
+renvoyer texa
+fnfonction
+
+
+
+purge(txt1,txt2) caractere
+resultat <- ""
+pour i <- 0 a len(txt1)
+    pour j <- 0 a len(txt2)
+        si tx1(i) != tx2(j) et bool = faux
+            resultat <- resultat && txt1(i)
+            bool = vrai
+        finsi
+    J suivant
+    z = faux
+i suivant
+renvoyer result
+fin fonction
+
+
+11.6
+
+fonction porc(inet) tableau
+bool= faux
+tant que bool == faux
+pour i <- 1 à len(inet)
+    pour j <- 1 à len(inet)-1
+    bool = faux
+    si inet(j) > inet (j+1)
+        bool == faux
+        tampon <- inet(j)
+        inet(j) <- inet (j+1)
+        inet(j+1) <- tampon
+    finsi
+    i suivant
+    fin tant que
+fin fonction
+
+
+

@@ -1,0 +1,138 @@
+Exercice 8.1
+
+DEBUT
+tableau tab(5,12)
+variable x,y
+x = y = 0
+pour x to 5
+    pour y to 12
+    tab(x,y) <- 0
+    x suivant
+y suivant
+fin
+
+
+
+Exercice 8.2
+
+
+Tableau​ X(1, 2) ​en​ ​Entier
+Variables​ i, j, val ​en​ ​Entier
+Début
+Val ← 1
+Pour​ i ← 0 à 1
+​   Pour​ j ← 0 à 2
+    X(i, j) ← Val
+    Val ← Val + 1
+    j ​Suivant
+i ​Suivant
+Pour​ i ← 0 à 1
+    ​Pour​ j ← 0 à 2                     1 2 3
+​       Ecrire​ X(i, j)                  4 5 6
+​    j ​Suivant
+i ​Suivant
+Fin
+
+
+
+Exercice 8.3
+
+
+Tableau​ X(1, 2) ​en​ ​Entier
+Variables​ i, j, val ​en​ ​Entier
+Début
+Val ← 1
+Pour​ i ← 0 à 1
+    ​Pour​ j ← 0 à 2
+        X(i, j) ← Val                   1 2 3
+        Val ← Val + 1                   4 5 6
+    j ​Suivant
+i ​Suivant
+Pour​ j ← 0 à 2
+​   Pour​ i ← 0 à 1
+        Ecrire X(i, j)
+    i ​Suivant
+j ​Suivant
+Fin
+Il ecrit le tableau de haut en bas et de gauche a droite.
+
+
+
+Exercice 8.4
+
+Tableau​ T(3, 1) ​en​ ​Entier
+Variables​ k, m, ​en​ ​Entier
+Début
+Pour​ k ← 0 à 3
+    ​Pour​ m ← 0 à 1                0 1
+        T(k, m) ← k + m           1 2
+    m ​Suivant                     2 3
+k ​Suivant                         3 4
+Pour​ k ← 0 à 3
+    ​Pour​ m ← 0 à 1
+​   Ecrire​ T(k, m)
+    m ​Suivant
+k ​Suivant
+Fin
+
+Il va ecrire de gauche a droite et de haut en bas.
+
+
+
+Exercice 8.5
+
+Tableau​ T(3, 1) ​en​ ​Entier
+Variables​ k, m, ​en​ ​Entier
+Début
+Pour​ k ← 0 à 3                            0 1
+    ​Pour​ m ← 0 à 1                     0  1 2
+        T(k, m) ← 2 * k + (m + 1)      1  3 4
+    m ​Suivant                          2  5 6
+k ​Suivant                              3  7 8
+Pour​ k ← 0 à 3
+    ​Pour​ m ← 0 à 1
+​       Ecrire​ T(k, m)
+    m ​Suivant
+k ​Suivant
+Fin
+
+Il va ecrire de gauche a droite et de haut en bas.
+
+
+Tableau​ T(3, 1) ​en​ ​Entier
+Variables​ k, m, ​en​ ​Entier
+Début
+Pour​ k ← 0 à 3                            0 1
+    ​Pour​ m ← 0 à 1                     0  1 5
+        T(k, m) ← (k + 1) + 4 * m      1  2 6
+    m ​Suivant                          2  3 7
+k ​Suivant                              3  4 8
+Pour​ k ← 0 à 3
+    ​Pour​ m ← 0 à 1
+​       Ecrire​ T(k, m)
+    m ​Suivant
+k ​Suivant
+Fin
+
+
+
+Exercice 8.6
+
+DEBUT
+tableau T(11,7)
+X = Y = A = B = 0
+pour x a 11
+    pour y a 7
+    si T(X,Y) > Max Alors
+        Max <- T(X,Y)
+        A <- X
+        B <- Y
+    FINDESI
+    y suivant
+x suivant
+Ecrire "la plus grande valeur est", MAX
+Ecrire "elle se trouve en position (" A ";" B ")" 
+FIN
+
+
+

@@ -1,0 +1,16 @@
+## Exe 1
+
+Realiser un programme demandant l'age de l'utilisateur et sortant oui ou non (majeur ou non).
+
+Exemple:
+
+> Votre age:
+12
+non
+18
+oui
+
+Info:
+*Afficher une string: print()
+*Récuperer une entrée
+clavier: raw_input()
