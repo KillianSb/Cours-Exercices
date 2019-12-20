@@ -81,6 +81,22 @@ WHERE
 	Espece.nom_courant IN ('Chat', 'Chien') AND mere_id IS NOT NULL
 ORDER BY Espece.nom_courant, Animal.nom DESC;
 
+
+SELECT
+    Espece.nom_courant as Type_Animal,
+    Animal.nom as Nom_Animal,
+    Animal.sexe as Sexe_Animal,
+    Race.nom as Race_Animal
+From Animal
+INNER JOIN Espece
+    ON Espece.id = Animal.espece_id
+INNER JOIN Race 
+    ON Race.id = Animal.race_id
+WHERE 
+    Espece.nom_courant = 'Chien'
+ORDER BY Espece.nom_courant, Animal.sexe, Race_nom DESC;
+
+
 ------------
 -- Rappel --
 ------------
