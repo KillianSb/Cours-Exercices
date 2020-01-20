@@ -184,6 +184,25 @@ form#comm {
 
 /* FIN Section Contact */
 
+/* Section Boutton haut */
+
+div#Haut a#retour{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    right: 20px;
+    font-size: 35px;
+    position: absolute;
+    text-shadow: 3px 2px 16px rgb(255, 255, 255);
+    border-radius: 10px;
+    border-width: 6px;
+    border-style: double;
+    height: 55px;
+
+}
+
+/* Section Boutton haut */
+
 ul.rs {
 	list-style-type: none;
 	padding: 0;
@@ -710,3 +729,13 @@ div#Caroussel-titre p{
 }
 
 /* FIN Titre Caroussel */
+
+/* Test*/
+
+div#test1 {
+    position: absolute;
+    float: right;
+    font-size: 100px;
+}
+
+/* Fin Test */
